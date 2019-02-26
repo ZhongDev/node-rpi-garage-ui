@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>rpiCon</title>
+    <script>var dotslength = <%= dotslength %>;</script>
+    <link rel="shortcut icon" type="image/png" href="/assets/img/sakura.png"/>
+    <link rel="apple-touch-icon" href="/assets/img/sakura.png">
+</head>
+<body>
+    <div class="keypad">
+        <div ontouchstart="headertap()" class="key-heading">
+            <div class="heading">Enter Passcode</div>
+            <div class="row">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>    
+            </div>
+        </div>
+        <div class="btn-container n1">
+            <button value="1" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n1">1</button>
+        </div>
+        <div class="btn-container n2">
+            <button value="2" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n2">2</button>
+        </div>
+        <div class="btn-container n3">
+            <button value="3" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n3">3</button>
+        </div>
+        <div class="btn-container n4">
+            <button value="4" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n4">4</button>
+        </div>
+        <div class="btn-container n5">
+            <button value="5" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n5">5</button>
+        </div>
+        <div class="btn-container n6">
+            <button value="6" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n6">6</button>
+        </div>
+        <div class="btn-container n7">
+            <button value="7" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n7">7</button>
+        </div>
+        <div class="btn-container n8">
+            <button value="8" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n8">8</button>
+        </div>
+        <div class="btn-container n9">
+            <button value="9" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n9">9</button>
+        </div>
+        <div class="btn-container n0">
+            <button value="0" ontouchstart="btnStart(this)" ontouchend="btnEnd(this)" ontouchcancel="btnEnd(this)"  class="keypad-btn n0">0</button>
+        </div>
+    </div>
+    <div class="bg-image"></div>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>

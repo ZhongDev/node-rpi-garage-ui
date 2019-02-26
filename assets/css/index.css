@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'SFPro';
+    src: url('/assets/fonts/SFPro.ttf') format('truetype');
+}  
+
+body, html{
+    margin: 0;
+    position: fixed;  
+}
+
+*{
+    font-family: 'SFPro';
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.keypad{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    grid-template-columns:8.5vw 1fr 1fr 1fr 8.5vw;
+    grid-template-rows: 12.5vh 10vh 7.5vh 1fr 1fr 1fr 1fr 20vh;
+}
+
+.heading{
+    margin-top: 0.75em;
+    margin-bottom: 1em;
+}
+
+.row{
+    height: calc((100% - 2.5em) / 5 * 2);
+}
+
+.dots{
+    transition-timing-function: ease-out;
+    transition: background 0.3s;
+    display: inline-block;
+    height: 100%; 
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.key-heading{
+    font-size: 140%;
+    color: white;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.keypad-btn{
+    color: white;
+    font-size: 200%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.3s;
+    transition-timing-function: ease-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.keypad-btn.btn-pressed{
+    transition: all 0s;
+    background: rgba(255,255,255,0.5)
+}
+
+.btn-container{
+    height: calc(100% - 2vh);
+    width: calc(100% - 2vh);
+    text-align: center;
+    padding: 1vh;
+}
+
+.btn-container.n1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.btn-container.n2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.btn-container.n3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.btn-container.n4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.btn-container.n5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.btn-container.n6{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.btn-container.n7{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.btn-container.n8{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.btn-container.n9{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.btn-container.n0{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.bg-image{
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/img/sakura.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+}
