@@ -1,0 +1,27 @@
+{
+  "name": "rpi-garage-ui",
+  "version": "1.0.0",
+  "description": "Raspberry Pi Zero W garage door opener UI",
+  "main": "rpi-garage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhongDev/node-rpi-garage-ui.git"
+  },
+  "author": "ZhongDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhongDev/node-rpi-garage-ui/issues"
+  },
+  "homepage": "https://github.com/ZhongDev/node-rpi-garage-ui#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ws": "^4.0.0",
+    "onoff": "^3.2.9",
+    "ws-rate-limit": "0.0.0"
+  }
+}
