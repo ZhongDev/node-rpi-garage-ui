@@ -19,3 +19,6 @@ KEY=apresharedkey
 GPIO=7
 PORT=80
 ```
+
+# Setting up preshared key on client
+To setup the preshared key on the client, press "Enter Passcode" 11 times. A popup will show your current key and will allow you to modify it as well.
