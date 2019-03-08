@@ -11,6 +11,9 @@ Then open a terminal and type</br>
 
 To run the server, type ```node rpi-garage.js``` into the terminal, then open on a touch device the ip of your Raspberry Pi.</br>
 
+## NOTE
+For the application to properly store cookies, you will need to point a domain to your local ip, or setup a domain redirect with a custom dns on your touch device.
+
 # Example .env file
 You'll need a .env file in the `node-rpi-garage-ui` folder to setup your own pin, verification password (key). You can also change the port the website runs on and the GPIO signal pin for the relay.
 ```
